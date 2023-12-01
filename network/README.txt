@@ -1,0 +1,1 @@
+#melanomNN.h5 je natrénovaná topologie neuronové sítě pro aplikaci
