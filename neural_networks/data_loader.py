@@ -7,7 +7,7 @@ import glob
 
 def load_data():
 # Cesta k datasetu
-    file_path = r'C:\Users\Petr\Desktop\Rozpoznání_obrazů_pomocí_hlubokých_neuronových_sítí_jagoš\Dataset\Train'
+    file_path = r'C:\Users\Petr\Desktop\Melanom\Dataset\Train'
     image_paths = glob.glob(path.join(file_path, '*.png'))
 
 # Přečtení obrázků a uložení dat do pole
@@ -37,7 +37,7 @@ def load_data():
 
 def load_test_data():
 # Cesta k datasetu
-    file_path = r'C:\Users\Petr\Desktop\Rozpoznání_obrazů_pomocí_hlubokých_neuronových_sítí_jagoš\Dataset\Test'
+    file_path = r'C:\Users\Petr\Desktop\Melanom\Dataset\Test'
     image_paths = glob.glob(path.join(file_path, '*.png'))
 
 # Načtení obrázků
