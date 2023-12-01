@@ -1,3 +1,3 @@
-# melanom_prediction_app
+# Predikce melanomu
 
-#pouze kód
+#Aplikace pro predikci melanomu vytvořená v Pythonu. Za pomoci hlubokého učení dokáže aplikace odhadou procentuální riziko výskytu melanomu.
