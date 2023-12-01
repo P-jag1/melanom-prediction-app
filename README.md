@@ -1,7 +1,8 @@
-# Predikce melanomu
+# Predikce melanomu :man_health_worker:
 
 Aplikace pro predikci melanomu vytvořená v jazyce Python. S využitím technologie hlubokého učení dokáže odhadnout procentuální riziko vzniku melanomu.
 
 ## Popis
 
-"*" test test
+- Aplikace umožňuje uživateli nahrát svůj vlastní obrázek a poté analyzuje a určuje procentuální riziko výskytu melanomu.
+- 
