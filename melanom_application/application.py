@@ -4,7 +4,12 @@ from PIL import Image, ImageTk
 from neural_network import predict_melanon
 
 class Application:
-    #tvorba uzivatelskeho rozhrani f
+    #tvorba uzivatelskeho rozhrani
+
+    color = '#020f12'
+    color = '#05d7ff'
+    color = '#65e7ff'
+    color = 'BLACK'
     def __init__(self, master):
         self.pics = []
         self.master = master

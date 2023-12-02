@@ -4,7 +4,7 @@ from PIL import Image
 
 #pomocna metoda slouzici pro upravu obrazku a naslednou predikci melanomu
 def predict_melanon(file_name):
-    model = keras.models.load_model('network\melanomNN.h5', compile = True)
+    model = keras.models.load_model('../network/melanomNN.h5', compile = True)
 
     image = Image.open(file_name)
     image = image.resize((64,64))
