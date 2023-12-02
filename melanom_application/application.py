@@ -5,30 +5,35 @@ from neural_network import predict_melanon
 
 class Application:
     #tvorba uzivatelskeho rozhrani
+
     def __init__(self, master):
         self.pics = []
         self.master = master
 
-        self.canvas = tk.Canvas(master, height = 550, width = 550, bg = "white")
+        self.canvas = tk.Canvas(master, height = 550, width = 550, bg = '#020f12')
         self.canvas.pack()
 
-        self.frame = tk.Frame(master, bg = "white")
+        self.frame = tk.Frame(master, bg = '#020f12')
         self.frame.place(relwidth = 0.8, relheight = 0.8, relx = 0.1, rely = 0.1)
 
-        self.openFile = tk.Button(master, text = "Open File", padx=10,
-                         pady=5, fg="black", bg="AntiqueWhite2", command = self.loadTestPicture)
+        self.openFile = tk.Button(master, text = "Open File", padx=10, pady=5,
+                         foreground = 'BLACK', background = '#05d7ff', activebackground = '#65e7ff', activeforeground = 'BLACK', highlightthickness = 2, highlightbackground = 'BLACK', highlightcolor='WHITE',
+                         border=0, cursor='hand2', font=('Arial', 10, 'bold'),
+                         command = self.loadTestPicture)
         self.openFile_window = self.canvas.create_window(10, 10, anchor="nw", window = self.openFile)
 
         self.predictMelanom = tk.Button(master, text = "Predict Melanom",
-                            padx=10, pady=5, fg="black", bg="AntiqueWhite2", command = self.prediction)
+                            padx=10, pady=5, foreground = 'BLACK', background = '#05d7ff', activebackground = '#65e7ff', activeforeground = 'BLACK', highlightthickness = 2, highlightbackground = 'BLACK', highlightcolor='WHITE',
+                         border=0, cursor='hand2', font=('Arial', 10, 'bold'), command = self.prediction)
         self.predictMelanom_window = self.canvas.create_window(210, 500, anchor = "nw", window = self.predictMelanom )
 
         self.quit = tk.Button(master, text = "Quit",
-                            padx=10, pady=5, fg="black", bg="AntiqueWhite2", command = self.quit)
+                            padx=10, pady=5, foreground = 'BLACK', background = '#05d7ff', activebackground = '#65e7ff', activeforeground = 'BLACK', highlightthickness = 2, highlightbackground = 'BLACK', highlightcolor='WHITE',
+                         border=0, cursor='hand2', font=('Arial', 10, 'bold'), command = self.quit)
         self.quit_window = self.canvas.create_window(490, 10, anchor="nw", window = self.quit)
 
-        self.label = tk.Label(master, text="Please load your test image", bg = "white")
-        self.label_window = self.canvas.create_window(10, 475, anchor="nw", window = self.label)
+        self.label = tk.Label(master, text="Please load your test image", bg = '#020f12', fg='#05d7ff')
+        self.label_window = self.canvas.create_window(10, 475, anchor="nw", window = self.label,)
 
     def get_pics(self):
         return self.pics
@@ -57,7 +62,7 @@ class Application:
         label.image = filename
         label.place(x=5, y=5)
         label.pack()
-        self.label.config(text="Image successfully loaded")
+        self.label.config(text="Image successfully loaded" ,fg='#05d7ff')
     #predikce vysledku
     def prediction(self):
         if not self.pics:
@@ -68,7 +73,7 @@ class Application:
             if verdict[0][0] < 50:
                 self.label.config(fg = "green")
             elif verdict[0][0] > 50 and verdict[0][0] < 75:
-                self.label.config(fg = "black")
+                self.label.config(fg = '#05d7ff')
             else:
                 self.label.config(fg = "red")
             verdict = round(verdict[0][0], 2).astype("str")
