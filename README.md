@@ -18,7 +18,16 @@ Melanoma prediction application created in the Python language. Using deep learn
 
 ## Topologie sítě
 
+- Topologie neuronové sítě s nejlepším výkonem (trénovací přesnost 84.12% a testovací přesnost 80%, 60 špatných určení). 
+
 ![obrazek](https://github.com/P-jag1/melanom_prediction_app/assets/73929822/a3b8fddb-384e-4967-92cd-79de38800272)
+
+## TO-DO:
+
+- Malý trénovací set -> je potřeba hodně zvýšit počet obrázku a zkusit vytrénovat novou síť
+- Zkusit složitější topologii sítě
+- Předělat UI aplikace
+- Mobilní aplikace???
 
 
 
