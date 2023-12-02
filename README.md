@@ -10,9 +10,16 @@ Melanoma prediction application created in the Python language. Using deep learn
 - Analýza obrázku probíhá pomocí modelu umělé neuronové sítě, který byl předem vytrénován.
 - Testováno bylo několik modelů neuronových sítí, a z nich byl vybrán ten s nejlepším výkonem [[Modely]](https://github.com/P-jag1/melanom_prediction_app/tree/main/neural_networks).
 - Vzhledem k povaze projektu, který zahrnuje zpracování a klasifikaci obrazu, byla zvolena architektura konvoluční neuronové sítě.
+- Trénovací a testovací data byla použita z veřejného datasetu HAM10000 (použito 5200 obrázků, z toho 1113 maligních a 4087 benigních).
 - [Metody](https://github.com/P-jag1/melanom_prediction_app/blob/main/neural_networks/data_loader.py) pro převedení obrázků na soubory určené k tréninku a testování.
 - [Metody](https://github.com/P-jag1/melanom_prediction_app/blob/main/neural_networks/data_visualizer.py) pro vizualizaci během tréninku.
-- Trénovací a testovací data byla použita z veřejného datasetu HAM10000 (použito 5200 obrázků, z toho 1113 maligních a 4087 benigních).
 
-## Aplikace
+## Aplikace 
+
+## Topologie sítě
+
+![obrazek](https://github.com/P-jag1/melanom_prediction_app/assets/73929822/a3b8fddb-384e-4967-92cd-79de38800272)
+
+
+
 
