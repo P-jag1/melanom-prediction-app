@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 from neural_network import predict_melanon
 
 class Application:
-    #tvorba uzivatelskeho rozhrani
+    #tvorba uzivatelskeho rozhrani f
     def __init__(self, master):
         self.pics = []
         self.master = master
